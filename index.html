@@ -12,28 +12,38 @@
       <input type="date" id="enddate"></input>
       <button>Filter</button>
     </form>
-    <table>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h2>Pitch Data</h2>
+  <table id="pitchTable">
+    <thead>
       <tr>
         <th>ID</th>
         <th>Speed</th>
         <th>Result</th>
       </tr>
-      <tr>
-        <td><a href="details.html">Pitch 12345</a></td>
-        <td>95</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td><a href="details.html">Pitch 12346</a></td>
-        <td>92</td>
-        <td>--</td>
-      </tr>
-      <tr>
-        <td><a href="details.html">Pitch 12347</a></td>
-        <td>75</td>
-        <td>K</td>
-      </tr>
-    </table>
+    </thead>
+    <tbody>
+      <!-- Data will be populated here dynamically -->
+    </tbody>
+  </table>
     <script src="script.js"></script>
   </body>
 </html>
